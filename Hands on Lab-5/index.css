@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+        "sidenav header"
+        "sidenav main"
+        "sidenav footer";
+    height:100%;
+}
+
+.header{
+    grid-area:header;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.header .head-search{
+    margin-left: 50px;
+    color:#777;
+}
+
+.head-input{
+    border: none;
+    background: transparent;
+    padding: 8px;
+    font-size: 20px;
+    color: #777;
+}
+
+.head-input:focus{
+    outline:none;
+    border:none;
+}
+
+.sidenav{
+    grid-area:sidenav;
+    background-color: rgb(43, 33, 82);
+    height: 100%;
+    width:240px;
+    overflow-y: auto;
+    color:white;
+    z-index: 2;
+    
+}
+.sidenav-title{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    height: 50px;
+    background-color: rgba(0,0,0,.15);
+}
+
+.nav-list{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width: 240px;
+}
+.nav-list .items{
+    position: relative;
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.nav-list .items:hover {
+    background-color: rgb(29, 16, 82);
+    cursor: pointer;
+}
+.main{
+    grid-area:main;
+    background-color: rgb(245, 245, 245);
+}
+.main-container{
+    margin: 2px 15px;
+}
+
+.main-section-1, .main-section-3{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.section-1-right, .section-3-right{
+    display: flex;
+    cursor: pointer;
+    color: rgb(92, 83, 83);
+}
+
+.section-1-right .events, .section-3-right .date{
+    padding-right: 10px;
+}
+
+.main-section-2{
+    display: grid;
+    grid-template-rows: 70px 140px;
+    border:none;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.main-section-2 .section-2-row2{
+    background-color: rgb(31, 92, 224, .7);
+}
+
+.main-section-4{
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    border:none;
+    margin-bottom: 10px;
+    height:300px;
+    background-color:rgb(245, 245, 245);
+}
+.section-4-col1{
+    margin-right: 15px;
+    text-align: center;
+    background-color: white;
+}
+.section-4-col2{
+    text-align: center;
+    background-color: white;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(75, 57, 57);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
