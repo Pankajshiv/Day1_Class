@@ -1,0 +1,36 @@
+h1{
+    color: green;
+    text-align: center;
+}
+
+/* #container{
+    text-align: center;   
+} */
+.container2{
+    position: relative;
+    border:3px solid black;
+    background-color:burlywood;
+}
+.box{
+    display: inline-block;
+    border: 2px solid blue;
+    height: 70px;
+    width: 70px;
+    padding-top: 25px;
+    margin: 5px;
+    text-align: center;
+}
+
+#box3{
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+
+
+/* this div styling for event bubbling and capturing */
+div{
+    padding:60px;
+    border: 2px solid blueviolet;
+
+}
