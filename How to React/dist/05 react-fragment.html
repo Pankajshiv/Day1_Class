@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To React</title>
+    <script crossorigin="" src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script crossorigin="" src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script type="text/babel">
+    const node = document.getElementById("root");
+    // Render two elements side by side
+    // const helloElement = React.createElement("span", null, "Hello");
+    // const worldElement = React.createElement("span", "World");
+
+    // // 1. Should not occupy extra space in DOM
+    // // 2. Can contain children.
+
+    // const element = React.createElement(
+    //   "div",
+    //   null,
+    //   helloElement,
+    //   worldElement
+    // );
+
+    // // With ReactDom Render
+    // // ReactDOM.render(?,node);
+    // // It is impossible to render elements side by side in React
+    // const fragement = React.createElement(
+    //   React.Fragement, // type of element
+    //   null, //Props
+    //   <div>Hello World</div>, //child1
+    //   worldElement //child2
+    // );
+
+    // ReactDOM.render(fragement, node);
+
+    // Without Create Class
+    const element = (
+      <>
+        <div>
+          <div>Hello World</div>
+          <div>Good Bye World</div>
+        </div>
+      </>
+    );
+
+    console.log("Element is", element);
+
+    ReactDOM.render(element, node);
+  </script>
+</html>
