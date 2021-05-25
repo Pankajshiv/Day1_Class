@@ -1,0 +1,40 @@
+
+
+
+
+
+
+li:hover:nth-child(2n){
+    color:hotpink;
+}
+li:hover:nth-child(2n+1){
+    color:rgb(104, 34, 216);
+}
+
+p::before{
+    content: "hello ";
+}
+p::after{
+    content: "go there";
+}
+
+p:not(.ca){
+    color: green;
+}
+
+input:read-only{
+    background-color: greenyellow;
+}
+
+.btn{
+    width: 10%;
+    height:10%;
+    cursor: pointer;
+}
+button:enabled{
+    background-color: rgb(196, 13, 120);
+}
+button:disabled{
+    background-color:greenyellow
+}
+

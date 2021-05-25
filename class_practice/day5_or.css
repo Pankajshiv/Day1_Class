@@ -1,0 +1,38 @@
+body{
+    display: flex;
+}
+
+div{
+    background: rgb(173, 165, 165);
+    padding: 2rem;
+    text-align: center;
+    border: 5px solid white;
+    row-gap: 3px;
+    column-gap: 3px;
+}
+
+@media (orientation:landscape){
+    body{
+        flex-direction: row;
+       
+    }
+}
+
+@media (orientation:portrait){
+    body{
+        flex-direction: column;
+
+    }
+}
+/* @media (min-resolution:150dpi){
+    div{
+        background-color: red;
+    }
+} */
+
+@media (max-resolution:40dpi){
+    div{
+        background-color: blueviolet;
+    }
+}
+

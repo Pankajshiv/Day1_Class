@@ -1,0 +1,23 @@
+body > *{
+    background: gainsboro;
+    padding: 2rem;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.container{
+    display:grid;
+    /* grid-template-columns: 20% 20% 20%; */
+    grid-template-columns: repeat(5,10fr);
+    /* grid-template-rows: 150; */
+    grid-auto-rows: minmax(100px, auto);
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    grid-gap:10px;
+}
+
+div{
+    border:1px solid black;
+
+}
+

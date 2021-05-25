@@ -1,0 +1,57 @@
+
+/* 
+.linear{
+    background: linear-gradient(270deg, rgb(133, 133, 221),rgb(22, 6, 94));
+    height: 20px;
+} */
+
+/* diagonal gradient */
+/* .linear{
+    background-image: linear-gradient(to bottom right,red,orange);
+    height: 50px;
+} */
+/* transparent gradient */
+/* .linear{
+    background-image: linear-gradient(to right,rgb(76, 163, 17),rgb(19, 65, 10));
+    height: 50px;
+} */
+
+
+.blur{
+    
+    background-image: url(https://th.bing.com/th/id/OIP.AiWFWy2E7XXt7nLTNtuUpwHaEK?w=289&h=180&c=7&o=5&pid=1.7);
+    border:2px solid gray;
+    height:180px;
+    width: 275px;
+}
+.blur .box p{
+    font-size: 24px;
+    font-weight: 600;
+    color: red;
+}
+.shadow{
+    text-shadow: 5px 5px 3px rebeccapurple;
+    text-align: center;
+}
+
+.keep{
+    width:200px;
+    border: 2px solid rgb(134, 77, 77);
+    /* word-break: keep-all; */
+    /* word-wrap:break-word; */
+}
+
+
+
+
+
+
+
+.btn{
+    background-image: url(https://th.bing.com/th/id/OIP.AiWFWy2E7XXt7nLTNtuUpwHaEK?w=289&h=180&c=7&o=5&pid=1.7);
+    width: 15%;
+    height: 50px;
+    align-items: center;
+    margin:50px;
+    cursor: pointer;
+}

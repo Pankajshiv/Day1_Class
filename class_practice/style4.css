@@ -1,0 +1,69 @@
+.container{
+    background-color: rgb(182, 181, 175);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* navabr styles */
+.navbar ul{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(28, 92, 189);  
+}
+
+.navbar ul .li-left{
+    float: left;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: ivory;
+    padding: 8px;
+    font-size: 18px;;
+}
+.navbar ul .li-right{
+    float: right;
+}
+
+a:visited{
+    color: gold;
+}
+a:hover{
+    color: rgb(230, 80, 10);
+}
+li a:active{
+    color: rgb(113, 192, 11);
+}
+
+ul li ul.dropdown{
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    background-color: rgb(253, 253, 253);
+    text-align: left;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+[class|=check]{
+    color:red;
+}
+[class$="three"]{
+    color: green;
+}
+[class*="ou"]{
+    color: blue;
+}
+[type="text"]{
+    height:28px;
+    width:150px;
+    margin-bottom: 10px;
+    outline-color: transparent;
+}
+

@@ -1,0 +1,39 @@
+
+/* .wrapper{
+    display:flex;
+}
+.wrapper > div{
+    flex:1;
+}
+
+.box{
+    background:lightsalmon;
+    border-radius: 2px;
+    margin:2px;
+} */
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+body > *{
+    background: gainsboro;
+    padding: 1rem;
+    text-align: center;
+    border: 5px solid white;
+}
+
+.header,
+.footer{
+    flex:1 100%;
+}
+
+.sidebar{
+    flex:1;
+    height:500px;
+}
+.main{
+    flex:5;
+    flex-direction: column;
+}
+
+

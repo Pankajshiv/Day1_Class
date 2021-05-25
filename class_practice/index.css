@@ -1,0 +1,32 @@
+body{
+    background-color: #c5e1a5;
+}
+
+.container{
+    width:98%;
+    border: 1px solid rgb(158, 149, 149);
+}
+
+.form-group{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.form-control{
+    font-family: sans-serif;
+    border: none;
+    height: 10px;
+    padding: 10px;
+}
+
+.form-control:focus{
+    outline-color: rgb(117, 111, 74);
+}
+.form-label{
+    width:30%;
+    display: inline;
+}
+
+
